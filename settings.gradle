@@ -1,0 +1,21 @@
+pluginManagement {
+    repositories {
+        //jcenter()
+        mavenCentral()
+        maven {
+            name = 'Fabric'
+            url = 'https://maven.fabricmc.net/'
+        }
+        gradlePluginPortal()
+    }
+}
+
+rootProject.name = 'RaincandyWebsocketForwardProtocol'
+
+include "WSFProtocolSDK"
+include "WSFMiraiForwardPlugin"
+include "WSFSpigotForwardPlugin"
+//include "WSFBungeeForwardPlugin"
+include "WSFFabricForwardMod"
+include 'Webserver'
+

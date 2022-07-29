@@ -1,0 +1,12 @@
+[submodule "WSFSpigotForwardPlugin"]
+	path = WSFSpigotForwardPlugin
+	url = https://github.com/angelkawaii2/WSFSpigotForwardPlugin
+[submodule "WSFProtocolSDK"]
+	path = WSFProtocolSDK
+	url = https://github.com/angelkawaii2/WSFProtocolSDK
+[submodule "WSFFabricForwardMod"]
+	path = WSFFabricForwardMod
+	url = https://github.com/angelkawaii2/WSFFabricForwardMod
+[submodule "WSFMiraiForwardPlugin"]
+	path = WSFMiraiForwardPlugin
+	url = https://github.com/angelkawaii2/WSFMiraiForwardPlugin
