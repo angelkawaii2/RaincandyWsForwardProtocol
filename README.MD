@@ -12,11 +12,16 @@ git submodule update --init --recursive
 
 之后在本仓库目录下使用 gradle 进行编译.
 
+## 能做什么？
+
+这个项目设计之初是用于 QQ群 和 Minecraft 的双向消息/指令转发，但协议本身是通用的，因此可以实现任意数据（包括二进制）的转发。
+
+目前本项目已经实现了基于 Mirai QQ机器人框架 和 Minecraft（Bukkit API插件/Fabric 1.18）的 聊天/指令互通
+
 ## 工作原理
 
-本程序为CS架构，其中 Client 连接到 Server 后，封装需要传输的信息（目标Client ID、消息本体等），然后通过 Websocket 发送给
-Server。
-Server 端收到消息后，判断消息目的地，将其转发给目标 Client。
+本程序为CS架构，其中 Client 通过 Websocket 连接到 Server 后，封装需要传输的信息（目标Client ID、消息本体等），将其发送给 Server端。
+Server端 收到消息后，判断消息目的地，将其转发给目标 Client。
 
 ## 子模块列表/Submodules List
 
